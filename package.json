@@ -1,0 +1,32 @@
+{
+  "name": "@whitespace/gatsby-starter-wordpress-basic",
+  "private": true,
+  "description": "Gatsby starter for Wordpress",
+  "version": "0.0.0",
+  "author": "Whitespace <code@whitespace.se>",
+  "license": "0BSD",
+  "scripts": {
+    "build": "NODE_ENV=production yarn wp-generate-schema-fragments && NODE_OPTIONS='-r esm' gatsby build",
+    "clean": "gatsby clean && yarn wp-generate-schema-fragments",
+    "develop": "NODE_OPTIONS='-r esm' gatsby develop",
+    "fix": "npx eslint --fix '**/*.js' || true",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,scss,css,yml,html}\"",
+    "refresh": "curl -X POST http://localhost:8000/__refresh",
+    "serve": "NODE_OPTIONS='-r esm' gatsby serve --port 8000",
+    "start": "yarn develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "wp-generate-schema-fragments": "NODE_OPTIONS='-r esm' node scripts/wp-generate-schema-fragments"
+  },
+  "dependencies": {
+    "@whitespace/gatsby-theme-wordpress-basic": "*",
+    "gatsby": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
+    "prettier": "^2.2.1"
+  }
+}
