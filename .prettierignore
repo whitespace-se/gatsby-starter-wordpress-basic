@@ -1,4 +1,4 @@
-.cache
-package.json
-package-lock.json
-public
+# Gatsby
+/.cache
+/public
+/shared/wp-fragment-types.json
