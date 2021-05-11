@@ -16,6 +16,9 @@ export const query = graphql`
     }
     ... on WP_NodeWithContentEditor {
       content
+      contentMedia {
+        ...WP_ImageLarge
+      }
     }
     ... on WP_BlockEditorContentNode {
       ...WP_BlocksForPage

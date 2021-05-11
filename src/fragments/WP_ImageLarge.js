@@ -2,6 +2,7 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_ImageLarge on WP_MediaItem {
+    databaseId
     base64: base64Uri
     src: sourceUrl(size: LARGE)
     srcSet: srcSet(size: LARGE)
