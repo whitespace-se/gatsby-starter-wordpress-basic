@@ -11,6 +11,13 @@ export const query = graphql`
         name
       }
     }
+    ... on WP_NodeWithAuthor {
+      author {
+        node {
+          name
+        }
+      }
+    }
     ... on WP_NodeWithTitle {
       title
     }
