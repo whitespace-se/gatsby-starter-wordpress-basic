@@ -19,7 +19,7 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
-    "@whitespace/gatsby-theme-wordpress-basic": "^0.5.1",
+    "@whitespace/gatsby-theme-wordpress-basic": "^0.5.4",
     "gatsby": "^3.4.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
