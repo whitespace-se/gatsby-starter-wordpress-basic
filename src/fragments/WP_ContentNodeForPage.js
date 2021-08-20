@@ -27,9 +27,9 @@ export const query = graphql`
         ...WP_ImageLarge
       }
     }
-    ... on WP_BlockEditorContentNode {
-      ...WP_BlocksForPage
-    }
+    # ... on WP_BlockEditorContentNode {
+    #   ...WP_BlocksForPage
+    # }
     ... on WP_Page {
       ...WP_PageForPage
     }
