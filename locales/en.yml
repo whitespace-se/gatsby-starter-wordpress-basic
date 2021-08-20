@@ -2,3 +2,17 @@ publishedAt: Published
 updatedAt: Updated
 author: Author
 relatedPages: Related pages
+search:
+  facetLabels:
+    contentType:
+      any: All content
+      page: Pages
+      post: Posts
+    year:
+      any: Any year
+    month:
+      any: Any month
+clearFilterLabel: Clear filters
+page: Page
+nextPage: Next page
+previousPage: Previous page
