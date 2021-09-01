@@ -16,7 +16,7 @@
     "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
     "start": "yarn dev",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "wp-generate-schema-fragments": "cross-env NODE_OPTIONS=\"-r esm\" node scripts/wp-generate-schema-fragments"
+    "wp-generate-schema-fragments": "node -r esm scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
     "@whitespace/gatsby-theme-wordpress-basic": "^0.14.0",
