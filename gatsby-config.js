@@ -23,6 +23,9 @@ export const plugins = [
         refetchInterval: process.env.WORDPRESS_REFETCH_INTERVAL,
         nodesPerFetch: Number(process.env.WORDPRESS_NODES_PER_FETCH),
       },
+      search: {
+        paths: "search",
+      },
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
