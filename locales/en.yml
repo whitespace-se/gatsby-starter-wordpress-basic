@@ -13,6 +13,7 @@ search:
       any: Any year
     month:
       any: Any month
+tagsLabel: Tags
 clearFilterLabel: Clear filters
 page: Page
 nextPage: Next page
