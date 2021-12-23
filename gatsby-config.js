@@ -30,4 +30,27 @@ export const plugins = [
       postCss: { postcssOptions: require("./postcss.config")() },
     },
   },
+  {
+    resolve: "@whitespace/gatsby-plugin-matomo",
+    options: {
+      mtmContainerId: "1234567890",
+      includeInDevelopment: true,
+      // mtmDefaultDataVariable: Joi.alternatives()
+      //   .try(Joi.object(), Joi.function())
+      //   .default(null)
+      //   .description(
+      //     `Data variable to be set before Matomo plugin is loaded. Should be an object or a function.`,
+      //   ),
+      // mtmDataVariableName: Joi.string().description(`Data variable name.`),
+      // mtmPAQDefaultDataVariable: Joi.alternatives()
+      //   .try(Joi.object(), Joi.function())
+      //   .default(null)
+      //   .description(
+      //     `Data variable for PAQ to be set before Matomo plugin is loaded. Should be an object or a function.`,
+      //   ),
+      // mtmPAQDataVariableName: Joi.string().description(`PAQ Data variable name.`),
+      routeChangeEventName: `gatsby-route-change`,
+      mtmHost: `https://matomo.example.com`,
+    },
+  },
 ];
