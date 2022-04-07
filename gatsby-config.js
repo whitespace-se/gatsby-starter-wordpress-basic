@@ -26,7 +26,7 @@ export const plugins = [
       search: {
         paths: ["search"],
       },
-      pageIndex: {
+      siteIndex: {
         includePage: ({ page }) =>
           page.context.contentType && page.context.contentType.name === "page",
         localizations: {
