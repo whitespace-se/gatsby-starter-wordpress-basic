@@ -26,6 +26,21 @@ export const plugins = [
       search: {
         paths: ["search"],
       },
+      pageIndex: {
+        includePage: ({ page }) =>
+          page.context.contentType && page.context.contentType.name === "page",
+        localizations: {
+          en: {
+            basePath: "/content",
+            alphabet: Array.from("abcdefghijklmnopqrstuvwxyz"),
+            restInitial: {
+              path: "/other-pages",
+              title: "Other pages",
+              label: "#",
+            },
+          },
+        },
+      },
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
