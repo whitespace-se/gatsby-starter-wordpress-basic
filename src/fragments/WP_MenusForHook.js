@@ -2,9 +2,9 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   fragment WP_MenusForHook on WP {
-    menus {
+    menus(first: 1000) {
       nodes {
-        menuItems {
+        menuItems(first: 10000) {
           nodes {
             connectedObject {
               ... on WP_Page {
