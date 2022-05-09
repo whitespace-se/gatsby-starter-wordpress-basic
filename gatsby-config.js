@@ -3,9 +3,10 @@ import { loadConfig, truey } from "@whitespace/gatsby-theme-wordpress-basic";
 loadConfig();
 
 export const siteMetadata = {
+  author: ``,
+  description: `Starter site using Wordpress and Gatsby`,
   siteUrl: process.env.GATSBY_SITE_URL,
   title: `Wordpress Starter`,
-  description: `Starter site using Wordpress and Gatsby`,
 };
 
 export const plugins = [
@@ -41,6 +42,7 @@ export const plugins = [
           },
         },
       },
+      enableSEO: false,
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
