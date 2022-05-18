@@ -19,8 +19,8 @@
     "wp-generate-schema-fragments": "node -r esm scripts/wp-generate-schema-fragments"
   },
   "dependencies": {
-    "@whitespace/gatsby-plugin-matomo": "^1.1.0-next.0",
-    "@whitespace/gatsby-theme-wordpress-basic": "^1.1.0-next.0",
+    "@whitespace/gatsby-plugin-matomo": "^1.1.0",
+    "@whitespace/gatsby-theme-wordpress-basic": "^1.1.0",
     "gatsby": "^3.14.3",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "react": "^17.0.2",
