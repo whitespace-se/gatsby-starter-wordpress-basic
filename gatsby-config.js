@@ -48,6 +48,10 @@ export const plugins = [
     },
   },
   {
+    resolve: "@whitespace/gatsby-plugin-cookie-consent",
+    options: { head: true },
+  },
+  {
     resolve: "@whitespace/gatsby-plugin-matomo",
     options: {
       mtmContainerId: process.env.MATOMO_CONTAINER_ID,
