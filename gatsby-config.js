@@ -27,6 +27,8 @@ export const plugins = [
       search: {
         paths: ["search"],
       },
+      disableSearchPlugin: false,
+      disableDefaultArchivePages: false,
       siteIndex: {
         includePage: ({ page }) =>
           page.context.contentType && page.context.contentType.name === "page",
