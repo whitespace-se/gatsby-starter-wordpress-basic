@@ -27,6 +27,8 @@ export const plugins = [
       search: {
         paths: ["search"],
       },
+      disableSearchPlugin: false,
+      disableDefaultArchivePages: false,
       siteIndex: {
         includePage: ({ page }) =>
           page.context.contentType && page.context.contentType.name === "page",
@@ -46,6 +48,10 @@ export const plugins = [
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
+  },
+  {
+    resolve: "@whitespace/gatsby-plugin-cookie-consent",
+    options: { head: true },
   },
   {
     resolve: "@whitespace/gatsby-plugin-matomo",
