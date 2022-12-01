@@ -15,6 +15,7 @@ export const plugins = [
     options: {
       basePath: __dirname,
       fragmentsDir: `${__dirname}/src/fragments`,
+      siteMetadata,
       i18next: {
         defaultLanguage: "en",
         languages: ["en"],
@@ -44,7 +45,30 @@ export const plugins = [
           },
         },
       },
-      enableSEO: false,
+      enableSEO: true,
+      manifest: {
+        name: siteMetadata.title,
+        short_name: siteMetadata.title,
+        start_url: "/",
+        background_color: "#336699",
+        theme_color: "#336699",
+        display: "standalone",
+        icon: "src/images/icon.png",
+        crossOrigin: `use-credentials`,
+        include_favicon: true,
+      },
+      robotsTxt: {
+        host: `${siteMetadata.siteUrl}`,
+        sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
       // XXX: postcss.config.js doesn’t seem to load automatically
       postCss: { postcssOptions: require("./postcss.config")() },
     },
@@ -52,13 +76,5 @@ export const plugins = [
   {
     resolve: "@whitespace/gatsby-plugin-cookie-consent",
     options: { head: true },
-  },
-  {
-    resolve: "@whitespace/gatsby-plugin-matomo",
-    options: {
-      mtmContainerId: process.env.MATOMO_CONTAINER_ID,
-      mtmHost: process.env.MATOMO_HOST,
-      includeInDevelopment: truey(process.env.MATOMO_INCLUDE_IN_DEV),
-    },
   },
 ];
