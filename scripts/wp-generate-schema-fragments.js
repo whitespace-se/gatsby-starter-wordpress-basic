@@ -1,13 +1,10 @@
-import fs from "fs";
-import path from "path";
-import url from "url";
+const fs = require("fs");
+const path = require("path");
 
-import { loadConfig } from "@whitespace/gatsby-theme-wordpress-basic";
-import fetch from "node-fetch";
+const { loadConfig } = require("@whitespace/gatsby-theme-wordpress-basic");
+const fetch = require("node-fetch");
 
 loadConfig();
-
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 fetch(`${process.env.GATSBY_WORDPRESS_URL}/graphql`, {
   method: "POST",

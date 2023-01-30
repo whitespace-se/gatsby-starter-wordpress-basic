@@ -6,22 +6,23 @@
   "author": "Whitespace <code@whitespace.se>",
   "license": "AGPL",
   "scripts": {
-    "build": "yarn wp-generate-schema-fragments && cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
-    "clean": "cross-env NODE_OPTIONS=\"-r esm\" gatsby clean",
-    "dev": "yarn wp-generate-schema-fragments && cross-env NODE_OPTIONS=\"-r esm\" gatsby develop --open",
+    "build": "yarn wp-generate-schema-fragments && gatsby build",
+    "clean": "gatsby clean",
+    "dev": "yarn wp-generate-schema-fragments && gatsby develop --open",
     "format": "run-s format:*",
     "format:eslint": "npx eslint --fix '**/*.js' || true",
     "format:prettier": "prettier --write \"**/*.{js,jsx,json,md,scss,css,yml,html}\"",
     "refresh": "curl -X POST http://localhost:8000/__refresh",
-    "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
+    "serve": "gatsby serve",
     "start": "yarn dev",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "wp-generate-schema-fragments": "node -r esm scripts/wp-generate-schema-fragments"
+    "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments.js"
   },
   "dependencies": {
-    "@whitespace/gatsby-plugin-cookie-consent": "^1.3.0",
-    "@whitespace/gatsby-plugin-matomo": "^1.3.0",
-    "@whitespace/gatsby-theme-wordpress-basic": "^1.3.0",
+    "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.0",
+    "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.0",
+    "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.0",
+    "formik": "^2.2.9",
     "gatsby": "^3.14.3",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "react": "^17.0.2",
@@ -32,11 +33,12 @@
     "eslint": "^8.0.1",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-react": "^7.26.1",
-    "esm": "^3.2.25",
+    "http-proxy-middleware": "^2.0.6",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1"
   },
   "resolutions": {
+    "@apollo/client": "3.5.10",
     "postcss": "^8",
     "postcss-preset-env": "^7"
   }
