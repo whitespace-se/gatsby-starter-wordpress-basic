@@ -74,6 +74,14 @@ exports.plugins = [
             title: "Search",
           },
         },
+        // archives: {
+        //   post: {
+        //     searchBox: true,
+        //     facets: {
+        //       dates: false,
+        //     },
+        //   },
+        // },
         algolia: {
           appId: process.env.GATSBY_ALGOLIA_APP_ID,
           // Use Admin API key without GATSBY_ prefix, so that the key isn't exposed in the application

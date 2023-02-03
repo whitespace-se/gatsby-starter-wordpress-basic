@@ -19,9 +19,9 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments.js"
   },
   "dependencies": {
-    "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.0",
-    "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.0",
-    "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.0",
+    "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.2",
+    "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.2",
+    "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.2",
     "formik": "^2.2.9",
     "gatsby": "^3.14.3",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
