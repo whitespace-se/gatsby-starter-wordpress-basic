@@ -71,7 +71,9 @@ exports.plugins = [
       search: {
         paths: {
           search: {
-            title: "Search",
+            context: {
+              title: "Search",
+            },
           },
         },
         // archives: {
