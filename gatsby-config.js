@@ -62,6 +62,7 @@ exports.plugins = [
         defaultLanguage: "en",
         languages: ["en"],
       },
+      wsui: true,
       wp: {
         url: process.env.GATSBY_WORDPRESS_URL,
         refetchInterval: process.env.WORDPRESS_REFETCH_INTERVAL,
