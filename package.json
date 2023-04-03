@@ -19,8 +19,8 @@
     "wp-generate-schema-fragments": "node scripts/wp-generate-schema-fragments.js"
   },
   "dependencies": {
-    "@wsui/base": "^0.2.10",
-    "@wsui/theme-standard": "^0.2.10",
+    "@wsui/base": "^0.2.11",
+    "@wsui/theme-standard": "^0.2.11",
     "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.5",
     "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.5",
     "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.5",
