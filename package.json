@@ -21,9 +21,9 @@
   "dependencies": {
     "@wsui/base": "^0.2.12",
     "@wsui/theme-standard": "^0.2.12",
-    "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.5",
-    "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.5",
-    "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.5",
+    "@whitespace/gatsby-plugin-cookie-consent": "^1.4.0-next.9",
+    "@whitespace/gatsby-plugin-matomo": "^1.4.0-next.9",
+    "@whitespace/gatsby-theme-wordpress-basic": "^1.4.0-next.9",
     "formik": "^2.2.9",
     "gatsby": "^3.14.3",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
